@@ -72,6 +72,7 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 120%;
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 
   &:hover {
     background: @blue;
@@ -220,7 +221,7 @@
   }
 
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 18px;
   }
 
   &__text {
@@ -398,6 +399,9 @@
     text-decoration-line: underline;
     color: #000000;
     opacity: 0.8;
+    &:hover{
+      color: @blue;
+    }
   }
 
   &__info {
@@ -740,6 +744,9 @@
     line-height: 16px;
     color: #031332;
     text-decoration: none;
+    &:hover{
+      color: @blue;
+    }
   }
 
   .footer__top--icon {
@@ -872,9 +879,7 @@
     width: 70%;
   }
 
-  .footer__link {
-    font-size: 14px;
-  }
+
 
   .footer__info {
     font-size: 16px;
@@ -906,6 +911,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
   .questions__form{
     width: 74%;
@@ -920,6 +926,7 @@
   }
   .questions__text{
     text-align: left;
+    margin-bottom: 0;
   }
   .paint__title{
     margin-bottom: 18px;
@@ -953,5 +960,8 @@
 
   .swiper-button-next {
     right: -11%;
+  }
+  .footer__link {
+    font-size: 14px;
   }
 }
