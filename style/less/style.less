@@ -110,6 +110,9 @@
       margin: 0;
     }
   }
+  &__content{
+    padding: 30px 0;
+  }
 
   &__title {
     font-family: "Roadkill";
@@ -400,7 +403,8 @@
     color: #000000;
     opacity: 0.8;
     margin-bottom: 10px;
-    &:hover{
+
+    &:hover {
       color: @blue;
     }
   }
@@ -579,7 +583,20 @@
   width: 100%;
 }
 
+@media screen and (min-width: 375px) {
+  .header__title {
+    margin-bottom: 60px;
+  }
 
+  .header__content {
+    padding: 115px 0;
+  }
+}
+@media screen and (min-width: 414px){
+  .header__content {
+    padding: 80px 0;
+  }
+}
 
 
 @media screen and (min-width: 576px) {
@@ -717,10 +734,6 @@
   }
 
 
-
-
-
-
   .selection__slider {
     display: none;
   }
@@ -780,14 +793,17 @@
     font-size: 16px;
     line-height: 120%;
   }
-  .modal_div{
+
+  .modal_div {
     width: 452px;
     padding: 70px;
   }
+
   .modal_div .modal_close {
     width: 40px;
     height: 40px;
   }
+
   .modal_input {
     width: 100%;
     margin-bottom: 30px;
@@ -809,7 +825,8 @@
     line-height: 16px;
     color: #031332;
     text-decoration: none;
-    &:hover{
+
+    &:hover {
       color: @blue;
     }
   }
@@ -817,9 +834,11 @@
   .footer__top--icon {
     margin-left: 7px;
   }
+
   .footer__box {
     margin-bottom: 0;
   }
+
   .footer__wrap {
     display: flex;
     flex-direction: row;
@@ -836,6 +855,7 @@
   .footer__logo {
     margin: 0 30px 0 0;
   }
+
   .header__title {
     font-size: 75px;
     line-height: 90px;
@@ -881,14 +901,15 @@
   }
 
 
-
   .footer__info {
     font-size: 16px;
   }
+
   .reviews__container,
-  .work__container{
+  .work__container {
     position: relative;
   }
+
   .swiper-button-next {
     right: -5%;
   }
@@ -896,6 +917,7 @@
   .swiper-button-prev {
     left: -5%;
   }
+
   .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
     opacity: 0.4;
   }
@@ -908,51 +930,64 @@
     color: #1278E6;
     outline: none;
   }
-  .questions__content{
+
+  .questions__content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  .questions__form{
+
+  .questions__form {
     width: 74%;
   }
-  .questions__wrap{
+
+  .questions__wrap {
     width: 23%;
   }
-  .questions__title{
+
+  .questions__title {
     font-size: 30px;
     line-height: 110%;
     text-align: left;
   }
-  .questions__text{
+
+  .questions__text {
     text-align: left;
     margin-bottom: 0;
   }
-  .paint__title{
+
+  .paint__title {
     margin-bottom: 18px;
   }
-  .work__text{
+
+  .work__text {
     font-size: 14px;
   }
+
   .selection__button {
     width: 45.5%;
   }
+
   .work__slider,
-  .reviews__slider{
+  .reviews__slider {
     padding: 0;
   }
+
   .footer__content {
     width: 74.4%;
   }
+
   .footer__form {
     width: 30.9%;
   }
+
   .paint__button {
     width: 48%;
   }
 }
-@media screen and (min-width: 1300px){
+
+@media screen and (min-width: 1300px) {
 
 
   .swiper-button-prev {
@@ -962,6 +997,7 @@
   .swiper-button-next {
     right: -11%;
   }
+
   .footer__link {
     font-size: 14px;
   }
